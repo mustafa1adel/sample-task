@@ -1,0 +1,41 @@
+### Hello
+GET http://localhost:3000
+
+### Create a new user
+POST http://localhost:3000/account/signup
+Content-Type: application/json
+
+{
+  "email": "test1@acc.com",
+  "password": "1234",
+  "firstName": "test",
+  "phone": "+201000000000",
+  "dob": "2023-12-12",
+  "lastName": "test",
+  "userName": "test",
+  "gender": "MALE"
+}
+
+### signin an user
+POST http://localhost:3000/account/signin
+Content-Type: application/json
+
+{
+  "email": "test1@acc.com",
+  "password": "1234"
+}
+
+### Get profile data
+GET http://localhost:3000/account/get-profile-data
+
+### singout
+GET  http://localhost:3000/account/singout
+
+### Update user ;
+POST  http://localhost:3000/account/update-profile-info
+Content-Type: application/json
+
+{
+  "email": "email@hotmail.com",
+  "dob": "2023-02-14"
+}
